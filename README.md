@@ -8,7 +8,7 @@ These are the steps taken to achieve this:
 - Depending on the response (0 = Retail, 1 = Brand, 2 = Category) we perform a specific treatment.
 - If the <b>type of query is 0 or 1</b>, we search for a match with our unique retailers or brands by performing <b>TF-IDF</b> and <b>Cosine Similarity</b>.
 - Also, we compute a '<b>fuzzy similarity</b> score' in case there are typeos, which can be helpful if the cosine similarity doesn't bring relevant results.
-- Next, we fetch offers that come from our matched retailers or brands, only if the cosine similarity is > 0.9 or the fuzzy similarity is > 0.75
+- Next, we fetch offers that come from our matched retailers or brands, only if the cosine similarity is > 0.4 or the fuzzy similarity is > 0.75
 - If the <b>type of query is 2</b>, then the similarity of the term is compared to offers directly, and synonyms of the terms are computed and also compared to the offers to contemplate a wider range of relevant results.
 - Finally, the relevant offers are returned in a json list along with a log of activity.
 
