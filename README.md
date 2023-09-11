@@ -12,4 +12,4 @@ These are the steps taken to achieve this:
 - If the <b>type of query is 2</b>, then the similarity of the term is compared to offers directly, and synonyms of the terms are computed and also compared to the offers to contemplate a wider range of relevant results.
 - Finally, the relevant offers are returned in a json list along with a log of activity.
 
-<b>*IMPORTANT NOTE</b>: the similarity score is only returned if the type of query is 'category' as in the other cases the only match is with respect to the retailer or brand and that similarity is returned in the log.
+<b>*DEPLOYMENT</b>: The deployment project can be found in <a href="https://github.com/federico2001/Transformer_Based_IR-Deployment"> this repository</a>.
